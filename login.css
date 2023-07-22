@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section .imageBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+
+}
+section .imageBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .formbox{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+section .formbox .form{
+    width: 50%;
+
+}
+section .formbox .form h2{
+    color:black;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .formbox .form .inputBx{
+    margin-bottom: 20px;
+
+}
+section .formbox .form .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+section .formbox .form .inputBx input{
+    width: 100%;
+    padding: 8px 15px;
+    outline: none;
+    font: 400;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    letter-spacing: 1px;
+    
+}
+section .formbox .form .inputB input[type="submit"]{
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    width: 30%; 
+    padding: 6.5px;
+    border-radius: 5rem; 
+    
+}
+
+.inputB{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+section .formbox .remember p{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+section .formbox .remember p a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px)
+{
+    section.imageBx{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    }
+    
+}
